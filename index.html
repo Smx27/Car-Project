@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="Rect" class="ractaingle"></div>
+    <Section>
+        <header>
+            <div class="nav">
+                <div class="logo">
+                    <img src="./Logo/Logo.png" alt="Logo">
+                </div>
+                <div class="link">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Cars</a></li>
+                        <li><a href="">What's New</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a onclick="loginbutton()" href="#">Login Here</a></li>
+                        <li><a href="">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </Section>
+    <section>
+        <div class="content">
+            <div class="text">
+                <h2>Not a regular Car Rental Service <br>It's <span>DogeCars</span></h2>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam, totam modi eaque saepe
+                        ducimus
+                        corrupti odio necessitatibus voluptate inventore, ad sit aliquam aliquid.</p>
+                    <p id="GTR"><span>Nissan GTR</span> The updated Nissan GT-R has the same twin-turbocharged 3,799 cc
+                        (3.8 L;
+                        231.8 cu in) V6 VR38DETT engine but increased the engine output to 421 kW (572 PS; 565 hp) at
+                        6,400 rpm and 633 N⋅m (467 lbf⋅ft) at 3,200–5,800 rpm. The transmission system is also refined
+                        to shift the gears smoothly and quieter than before.</p>
+                    <p id="cevorlet"><span>Cevorlet Camero</span> The Chevrolet Corvette, colloquially known as the
+                        'Vette, is a two-door, two-passenger sports car manufactured and marketed by Chevrolet across
+                        more than 60 years of production and eight design generations. From 1953 to 2019, it was
+                        front-engined, and since 2020, it is mid-engined.</p>
+                    <p id="Mustang"><span>Ford Mustang </span> is a very good sports car. It gallops through turns with
+                        poise and control and boasts an impressive engine lineup that starts with a capable turbocharged
+                        four-cylinder and concludes with the meaty V8s that you'd expect in a muscle car.</p>
+                    <p id="porcha">
+                        <span>The Porsche 911</span> (pronounced Nine Eleven or in German: Neunelfer) is a two-door 2+2
+                        high
+                        performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart,
+                        Germany. It has a rear-mounted flat-six engine and a torsion bar suspension.
+                    </p>
+                    <p id="teshla">
+                        <span>Tesla Model S</span> A combination of searing performance, slippery looks, and a cool,
+                        high-tech minimalist cabin
+                        dominated by a big central touchscreen has proved highly attractive to buyers around the world
+                        for the best part of a decade, making the Tesla Model S the undisputed leader in Electric
+                        Vehicle (EV) luxury.
+                    </p>
+                    <a href="#">Book Now</a>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <img id="pic" src="./Assets/Gtr.png" alt="Nissan GTR">
+        </div>
+        <div class="selectbrand">
+            <ul>
+                <li><button
+                        onclick="picchange('Assets/Camaro.png'),changerootcolor('rgb(11, 126, 230)'), actiiveparagraph()"><img
+                            src="./Logo/Cevorlet.png" alt="Cevorlet"></button></li>
+                <li><button
+                        onclick="picchange('Assets/Mustang Gt.png'), changerootcolor('rgb(235,91,81)'), actiiveparagraph1()"><img
+                            src="./Logo/Mustang.jpg" alt="Mustang"></button></li>
+                <li><button
+                        onclick="picchange('Assets/Gtr.png'), changerootcolor('rgb(235,91,81)'), actiiveparagraph2()"><img
+                            src="./Logo/nissan.png" alt="Nissan"></button></li>
+                <li><button
+                        onclick="picchange('Assets/Porchaa 911.png'),changerootcolor('rgb(195, 203, 208)'), actiiveparagraph3()"><img
+                            src="./Logo/Porcha.png" alt="Porcha"></button></li>
+                <li><button
+                        onclick="picchange('Assets/Teshla Model S.png'),changerootcolor('rgb(168, 169, 167)'), actiiveparagraph4()"><img
+                            src="./Logo/Teshla.png" alt="Teshla"></button></li>
+            </ul>
+        </div>
+    </section>
+        <div class="login">
+            <div class="form" id="form">
+                <div class="content1">
+                    <h3>Login</h3>
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                    </ul>      
+                    <p>Use your Account</p>
+                    <input type="email" name="" id="email" placeholder="Email">
+                    <input type="password" name="" id="Password" placeholder="Password">
+                    <a href="">Forgot your Password?</a>
+                    <button><a href="">Login</a></button>
+                </div>
+                <div class="content2">
+                    <i class="fas fa-times" onclick="closelogin()"></i>
+                    <h2>Dont Have Any Account?</h2>
+                    <button><a href="">Sign Up</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
